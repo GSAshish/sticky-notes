@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.notes-header {
+  height: 70px;
+  background-color: rgba(248, 249, 250, 0.144);
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.notes-header .img {
+  width: 50px;
+  height: 50px;
+  background-image: url("./logo.svg");
+  background-repeat: none;
+  background-size: cover;
+  cursor: pointer;
+  position: relative;
+}
+
+.notes-header h1 {
+  text-transform: uppercase;
+  font-family: cursive;
+  color: #232323;
+}
+.notes-app {
+  background-color: rgba(33, 37, 41, 0.705);
+  min-height: 90vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 200px);
+  gap: 24px;
+  padding: 24px;
+}
+.notes {
+  height: 200px;
+  padding: 16px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 7px rgba(255, 255, 255, 0.15);
+  font-family: sans-serif;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: #f8f9fa;
+  overflow: auto;
+}
+.notes::-webkit-scrollbar {
+  width: 0;
+}
+
+.btn {
+  height: 200px;
+  border: none;
+  font-size: 100px;
+  cursor: pointer;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.15);
+}
+.hidden {
+  display: none !important;
+}
